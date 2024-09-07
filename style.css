@@ -1,4 +1,5 @@
 .app{
+ 
     width: 360px;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    flex: 1 1 0%;
 }
 .content{
     display: flex;
@@ -31,17 +33,15 @@
 
 }
 
-.operator{
-    color: #EB6666;
-}
-
 .input{
     font-size:medium;
     overflow: auto;
+    /* min-height: 1rem; */
 }
 
 .output{
     font-size:x-large;
+    /* min-height: 2rem; */
     overflow: auto;
 }
 
@@ -50,5 +50,32 @@
     background-color: #292D36;
     padding:1.5rem;
     border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 1rem;
+    box-shadow:0px -2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.key{
+    cursor: pointer;
+    display: block;
+    background-color: #262933;
+    padding: 30%;
+    border-radius:1rem ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.key:hover{
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.operator{
+    color: #EB6666;
+}
+
+.action{
+    color: #26FED7;
 }
 
