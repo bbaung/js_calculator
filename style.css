@@ -36,12 +36,12 @@
 .input{
     font-size:medium;
     overflow: auto;
-    /* min-height: 1rem; */
+    min-height: 1rem;
 }
 
 .output{
     font-size:x-large;
-    /* min-height: 2rem; */
+    min-height: 2rem;
     overflow: auto;
 }
 
